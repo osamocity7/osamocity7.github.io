@@ -108,4 +108,4 @@ const covid19ImpactEstimator = (data) => {
   return output;
 };
 
-//export default covid19ImpactEstimator;
+
