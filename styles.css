@@ -10,7 +10,7 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color:   white;
+    background-color:   plum;
     -webkit-tap-highlight-color: transparent;
     -webkit-tap-highlight-color: transparent;
     justify-content: center;
@@ -93,10 +93,10 @@
     width: 80px;
   }
 
-  .plabel {
-    font-size: large;
-    font-weight: 200px;
-    color: royalblue;
+  .plable {
+    font-size: 20px;
+    font-weight: 300px;
+    color: black;
 
   }
   
@@ -105,10 +105,12 @@
     
     padding-left: 0;
     padding-right: 0;
+    width: 150px;
+    height: 40px;
   }
   
   .btn-lg, .btn-group-lg>.btn {
-    font-weight: normal;
+    font-weight:bolder;
   }
   .btn-lg, .btn-group-lg>.btn {
     padding: 10px 16px;
