@@ -3,7 +3,7 @@ const covid19ImpactEstimator = (data) => {
   // var osas="tuyuyitit"
 
   const output = {
-    data,
+    data2,
     impact: {
       currentlyInfected: 0,
       infectionsByRequestedTime: 0,
