@@ -6,10 +6,11 @@
 
   <title>The HTML5 Herald</title>
   <meta name="description" content="The HTML5 Herald">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="SitePoint">
 
   <link rel="stylesheet" href="styles.css">
-  <script src="./src/estimator.js"></script>
+  <script src="estimator.js"></script>
 </head>
 
 <body>
@@ -22,33 +23,33 @@
         <h1>Covid-19 Estimator</h1>
         <br><br><br><br>
         <p>
-          <label >
+          <label for="id_1" >
             
             <br />
-            <input placeholder='enter population' class='form-control' data-population='population' type="text" name="population"  />
+            <input id='id_1' placeholder='enter population' class='form-control' data-population='population' type="text" name="population"  />
           </label>
         </p>
         <p>
-          <label>
+          <label for="id_2">
             
             <br />
-          <input placeholder='enter timeToElapse' class='form-control' data-time-to-elapse='timeToElapse' type="text" name="timeToElapse" />
+          <input id="id_2" placeholder='enter timeToElapse' class='form-control' data-time-to-elapse='timeToElapse' type="text" name="timeToElapse" />
           </label>
         </p>
 
         <p>
-            <label>
+            <label for="id_3">
               
               <br />
-            <input placeholder='enter reportedCases' class='form-control' data-reported-cases='reportedCases' type="text" name="reportedCases" />
+            <input id="id_3" placeholder='enter reportedCases' class='form-control' data-reported-cases='reportedCases' type="text" name="reportedCases" />
             </label>
           </p>
 
           <p>
-            <label>
+            <label for="id_4">
               
               <br />
-            <input placeholder='enter totalHospitalBeds' class='form-control' data-total-hospital-beds='totalHospitalBeds' type="text" name="totalHospitalBeds" />
+            <input id="id_4" placeholder='enter totalHospitalBeds' class='form-control' data-total-hospital-beds='totalHospitalBeds' type="text" name="totalHospitalBeds" />
             </label>
           </p>
 
@@ -56,7 +57,7 @@
             <label for='periodType'>
               
               <br />
-              <label class='plable'>select Period type</label><br>
+              <label class='plable'>select period type</label><br>
             <select placeholder='enter periodType'  data-period-type='periodType' type="text" name="periodType" >
               <option value="days">days</option>
               <option value="weeks">weeks</option>
@@ -70,7 +71,7 @@
 
         <br>
         
-        <button  class='class="btn btn-primary btn-lg btn-block"' data-go-estimate='my_btn' onclick="submitData()">Submit</button>
+        <button  class="btn btn-primary btn-lg btn-block" data-go-estimate='my_btn' onclick="submitData()">Submit</button>
     
       </form>
 
