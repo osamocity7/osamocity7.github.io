@@ -1,0 +1,90 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="./src/estimator.js"></script>
+</head>
+
+<body>
+    <h1></h1>
+    <br><br>
+    <h2 id='sk'></h2>
+
+    <div class='panel'>
+        <form class='form'>
+        <h1>Covid-19 Estimator</h1>
+        <br><br><br><br>
+        <p>
+          <label >
+            
+            <br />
+            <input placeholder='enter population' class='form-control' data-population='population' type="text" name="population"  />
+          </label>
+        </p>
+        <p>
+          <label>
+            
+            <br />
+          <input placeholder='enter timeToElapse' class='form-control' data-time-to-elapse='timeToElapse' type="text" name="timeToElapse" />
+          </label>
+        </p>
+
+        <p>
+            <label>
+              
+              <br />
+            <input placeholder='enter reportedCases' class='form-control' data-reported-cases='reportedCases' type="text" name="reportedCases" />
+            </label>
+          </p>
+
+          <p>
+            <label>
+              
+              <br />
+            <input placeholder='enter totalHospitalBeds' class='form-control' data-total-hospital-beds='totalHospitalBeds' type="text" name="totalHospitalBeds" />
+            </label>
+          </p>
+
+          <p>
+            <label for='periodType'>
+              
+              <br />
+              <label class='plable'>select Period type</label><br>
+            <select placeholder='enter periodType'  data-period-type='periodType' type="text" name="periodType" >
+              <option value="days">days</option>
+              <option value="weeks">weeks</option>
+              <option value="months">months</option>
+                </select>
+            </label>
+          </p>
+
+          
+
+
+        <br>
+        
+        <button  class='class="btn btn-primary btn-lg btn-block"' data-go-estimate='my_btn' onclick="submitData()">Submit</button>
+    
+      </form>
+
+      
+
+
+     
+
+      </div>
+  
+  <script>
+    const out1=  covid19ImpactEstimator()
+    console.log(out1)
+   document.getElementById("sk").innerHTML =out1
+  </script>
+</body>
+</html>
